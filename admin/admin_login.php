@@ -15,6 +15,7 @@
 		}else{
 			$message = "Please fill in the required fields";
 		}
+		echo "<h4>{$message}</h4>";
 	}
 ?>
 <!doctype html>

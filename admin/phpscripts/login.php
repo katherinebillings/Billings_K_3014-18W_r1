@@ -19,7 +19,10 @@
 			redirect_to("admin_index.php");
 		}else{
 			$message = "Username and/or password is incorrect.<br>Please make sure your cap lock key is turned off.";
-			//
+			$found_user = mysqli_fetch_array($user_set, MYSQLI_ASSOC);
+			$id = $found_user['user_id'];
+			$counterstring = "UPDATE tbl_user SET user_lock = user_lock + 1 WHERE user_id = {$id}";
+			$lockDquery = mysqli_query($link, $counterstring);
 			return $message;
 		}
 		mysqli_close($link);
