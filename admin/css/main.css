@@ -1,0 +1,120 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,d2ebf9+100 */
+    background: rgb(254,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(210,235,249,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=0 ); /* IE6-9 */
+}
+
+h1
+{
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3
+{
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+#anchors
+{
+    width: 40%;
+    margin: 0 auto;
+}
+
+a
+{
+    font-weight: bold;
+    display: block;
+    width: 100px;
+    height: 20px;
+    background-color: lightblue;
+    padding: 8px 10px;
+    border: 5px ridge aqua;
+    color: blue;
+}
+
+a:first-child { float: left; margin: 20px 0px 0px 30px;}
+a:last-child { float: right; margin: 20px 30px 0px 0px;}
+
+a:hover
+{
+    border-style: groove;
+}
+
+form
+{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+input, select
+{
+    margin-bottom: 10px;
+    float: right;
+    clear: right;
+    margin-right: 5%;
+}
+
+select
+{
+    padding: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+options
+{
+    
+}
+
+label
+{
+    margin: 3px 0 10px 5%;
+    float: left;
+    clear: left;
+    font-weight: bold;
+}
+
+input:last-child
+{
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 35px;
+    border: 5px ridge aqua;
+    background-color: lightblue;
+    padding: 8px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input:last-child:hover
+{
+    border-style: groove;
+}

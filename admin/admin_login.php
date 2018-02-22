@@ -23,6 +23,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Portal Login</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<form action="admin_login.php" method="post">

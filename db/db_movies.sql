@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 15, 2018 at 07:12 AM
+-- Generation Time: Feb 22, 2018 at 06:27 AM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -1061,19 +1061,21 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_fname` varchar(250) NOT NULL,
   `user_name` varchar(250) NOT NULL,
   `user_pass` varchar(250) NOT NULL,
+  `user_prehash` varchar(250) NOT NULL,
   `user_email` varchar(250) NOT NULL,
   `user_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `user_ip` varchar(50) NOT NULL DEFAULT 'no',
-  `user_lock` tinyint(4) NOT NULL DEFAULT '0',
+  `user_level` varchar(15) NOT NULL,
+  `user_ip` varchar(50) DEFAULT 'no',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_lock`) VALUES
-(1, 'Katie', 'kbillings', 'boots2049', 'kbillings@gmail.com', '2018-02-15 07:07:20', '::1', 0);
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_prehash`, `user_email`, `user_date`, `user_level`, `user_ip`) VALUES
+(1, 'Katie', 'kbillings', '$2b$10$JBsXmkyZPMS/mQqpL.kV7u7y8mKQc2sZYQ37RiHE/4nGfQ/gfcsjK', 'password', 'kbillings@gmail.com', '2018-02-22 06:23:36', '1', '::1'),
+(5, 'bob', 'bob', '$2y$10$/mHY974yMZ49.rIDQ6rGzu1b2No.HBHS5rbKXdm4YCVxbBsCTXnky', 'iIeSsZXa041x', 'bob@gmail.com', '2018-02-22 03:03:44', '2', 'no');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

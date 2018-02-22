@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Portal Login</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<h1>Welcome Company Name to your admin page</h1>
@@ -28,7 +29,10 @@
 	
 	//$date = date('l, F jS, Y \a\t g:i:s a');
 	echo "<h3>You last logged in on {$_SESSION['user_date']}</h3>";
-
 	?>
+	<div id="anchors">
+		<a href="admin_createuser.php">Create User</a>
+		<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
+	</div>
 </body>
 </html>
