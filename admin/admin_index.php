@@ -32,6 +32,8 @@
 	?>
 	<div id="anchors">
 		<a href="admin_createuser.php">Create User</a>
+		<a href="admin_edituser.php">Edit User</a>
+		<a href="admin_deleteuser.php">Fired</a>
 		<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
 	</div>
 </body>
